@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    Hello HTML
+    <br>
+    <br>
+    <a href="index.html">Home.</a>
+    <br>
+    <a href="form.html">Form.</a>
+  </header>
+  <hr>
+  <main>
+    <h1>Form</h1>
+    <!-- This tag allows the creation of forms to send user input to the server -->
+    <form action="submit" method="POST">
+      <!-- This tag it's used to contain and describe user input -->
+      <label for="name">
+        <span>Name:</span>
+        <!-- This tag it's to receive user input which varies from the type 
+          attribute, this links to the label through for and name attributes -->
+        <!-- The attribute required don't allow to submit the form without
+          the field -->
+        <input type="text" id="name" name="name" required>
+      </label>
+      <br>
+      <label for="phone">
+        <span>Phone:</span>
+        <!-- This input with the number type allows only numbers -->
+        <input type="number" id="phone" name="phone" 
+        min="0" max="300" step="5" required>  
+      </label>
+      <br>
+      <label for="sex">
+        <span>Sex:</span>
+        <br>
+        <span>Male</span>
+        <!-- This tags are to create radio buttons, to make a set of this 
+          buttons exclusive, it's required to asociate all of them to the same
+          name, and this allows to require only one of them -->
+        <input type="radio" id="male" name="sex" required>  
+        <span>Female</span>
+        <input type="radio" id="female" name="sex" required>  
+      </label>
+      <br>
+      <label for="Appointment date time">
+        <span>Appointment date time:</span>
+        <!-- Allows to input a date and time -->
+        <input type="datetime-local" id="Appointment date time" 
+        name="Appointment date time" required>
+      </label>
+      <br>
+      <label for="location">
+        <span>Location:</span>
+        <!-- This tag it's to create a dropdown menu -->
+        <select id="location" name="location" required>
+          <!-- This tags are to create option in the menu -->
+          <!-- The attributes disabled and selected are to create a placeholder -->
+          <option disabled selected value="mde">Select one</option>
+          <option value="mde">Medellín</option>
+          <option value="abq">Albuquerque</option>
+          <option value="jef">Jefferson City</option>
+        </select>
+      </label>
+      <br>
+      <label for="email">
+        <span>Email:</span>
+        <!-- This tag with the email type, validates the email address format -->
+        <input type="email" id="email" name="email" required>  
+      </label>
+      <br>
+      <label for="password">
+        <span>Password:</span>
+        <!-- This tag with the password type, hides it's content -->
+        <input type="password" id="password" name="password" required>  
+      </label>
+      <br>
+      <label for="description">
+        <span>Description:</span>
+        <br>
+        <!-- This tag it's for text that wouldn't fit in a regular text type
+        input field -->
+        <textarea id="description" name="description" required></textarea>
+      </label>
+      <br>
+      <label for="search">
+        <span>Search:</span>
+        <!-- When inputing text in this field, the x button shows up allowing to
+        delete the whole field content -->
+        <input type="search" id="search" name="search" required>  
+      </label>
+      <br>
+      <label for="file">
+        <span>Profile pic:</span>
+        <!-- This tag with the file type, it's to upload files -->
+        <input type="file" id="file" name="file" required>  
+      </label>
+      <br>
+      <label for="terms">
+        <!-- This tag it's form boolean options -->
+        <input type="checkbox" id="terms" name="terms" required>
+        <span>Sell my soul.</span>
+      </label>
+      <br>    
+      <br>    
+      <!-- This tag with the submit type it's to submit the gathered information
+      following the form action and method -->
+      <input type="submit" value="Submit">
+    </form>
+  </main>
+  <hr>
+  <footer>
+      <p style="text-align:center;">This is a footer with some legal stuff!</p>
+  </footer>
+</body>
+</html>
