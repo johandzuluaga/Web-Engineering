@@ -1,6 +1,6 @@
 interface AttributeProps {
-    Key: String;
-    Value: String;
+    Key: string;
+    Value: string;
 }
 
 const Attribute = ({Key, Value}: AttributeProps) => {

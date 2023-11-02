@@ -1,12 +1,8 @@
 import { Button } from '@/components/Button';
 import { LeftSidebar } from '@/components/LeftSidebar';
 import { LinkLogo } from '@/components/LinkLogo';
-import { BiLogoFacebook } from 'react-icons/bi';
-import { AiFillInstagram } from 'react-icons/ai';
-import { AiOutlineTwitter } from 'react-icons/ai';
-import { BiLogoLinkedin } from 'react-icons/bi';
-import { AiFillYoutube } from 'react-icons/ai';
-import { AiFillGithub } from 'react-icons/ai';
+import { BiLogoFacebook, BiLogoLinkedin } from 'react-icons/bi';
+import { AiFillInstagram, AiOutlineTwitter, AiFillYoutube, AiFillGithub } from 'react-icons/ai';
 import Image from "next/image";
 import { Header } from '@/components/Header';
 import { ProgrammingLogo } from '@/components/svgs/ProgrammingLogo';
@@ -17,9 +13,9 @@ import { MLLogo } from '@/components/svgs/MLLogo';
 import { APILogo } from '@/components/svgs/APILogo';
 import { CloudLogo } from '@/components/svgs/CloudLogo';
 import { EducationCard } from '@/components/EducationCard';
-import ProjectCard from '@/components/ProjectCard';
+import { ProjectCard } from '@/components/ProjectCard';
 import { useState } from 'react';
-import HireMeDialog from '@/components/HireMeDialog';
+import { HireMeDialog } from '@/components/HireMeDialog';
 
 const Index = () => {
   const [dialogOpen, setDialogOpen] = useState<boolean>(false);
@@ -31,11 +27,11 @@ const Index = () => {
           <Image src='/images/robo.jpg' width={200} height={400} alt='robot picture'/>
           <div className='flex flex-col gap-5'>
             <div className='flex flex-col'>
-              <span className='font-bold text-5xl'>I'm Johan Zuluaga</span>
+              <span className='font-bold text-5xl'>I&apos;m Johan Zuluaga</span>
               <span className='font-bold text-5xl text-hv_yellow'>Data Scientist</span>
             </div>
             <span>
-              Discover the real value of data and AI. Unleash your organization's full potential with cutting-edge AI solutions and data governance. I can help your company define a clear data path from business intelligence, passing through Data Engineering to Artificial Intelligence.
+              Discover the real value of data and AI. Unleash your organization&apos;s full potential with cutting-edge AI solutions and data governance. I can help your company define a clear data path from business intelligence, passing through Data Engineering to Artificial Intelligence.
               </span>
             <div>
               <Button text='HIRE ME!' OnClick={() => {setDialogOpen(true);}}></Button>

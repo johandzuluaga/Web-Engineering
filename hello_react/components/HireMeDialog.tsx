@@ -40,4 +40,4 @@ const HireMeDialog = ({ open, setOpen }: HireMeDialogProps) => {
   )
 }
 
-export default HireMeDialog
+export { HireMeDialog };

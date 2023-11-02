@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { BiSolidChevronRight } from 'react-icons/bi';
 import { LearnMoreDialog } from './LearnMoreDialog';
+import Image from 'next/image';
 
 interface ProjectCardProps {
     PicPath: string,
@@ -15,7 +16,7 @@ const ProjectCard = ({ PicPath, Title, Description, Article='', Code='' }: Proje
   return (
     <div className='flex flex-col w-[310px] h-[474px] bg-black border-r border-b'>
       <div className='w-[310px] h-[300px]'>
-        <img src={PicPath} alt="Graphic ilustration of the project" />
+        <Image src={PicPath} alt="Graphic ilustration of the project" />
       </div>
       <div className='flex flex-col p-6 gap-3'>
         <span className='text-lg font-medium'>{Title}</span>
@@ -30,4 +31,4 @@ const ProjectCard = ({ PicPath, Title, Description, Article='', Code='' }: Proje
   )
 }
 
-export default ProjectCard
+export { ProjectCard };
