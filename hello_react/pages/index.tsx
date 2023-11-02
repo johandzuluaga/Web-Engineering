@@ -38,26 +38,26 @@ const Index = () => {
               Discover the real value of data and AI. Unleash your organization's full potential with cutting-edge AI solutions and data governance. I can help your company define a clear data path from business intelligence, passing through Data Engineering to Artificial Intelligence.
               </span>
             <div>
-              <Button text='HIRE ME!'></Button>
+              <Button text='HIRE ME!' OnClick={() => {setDialogOpen(true);}}></Button>
             </div>  
             <HireMeDialog open={dialogOpen} setOpen={setDialogOpen} />
           </div>
         </section>
         <section>
-          <Header Title="My Knowledge" Description="Description"/>
+          <Header Title="Knowledge" Description="My knowledge comes from joining the worlds of Science, Engineering and Computing."/>
         </section>
         <section>
           <div className='grid grid-cols-3 gap-4'>
-            <KnowledgeCard Svg={ProgrammingLogo} Title='Programming' Description='Description'/>
-            <KnowledgeCard Svg={DatabasesLogo} Title='Databases' Description='Description'/>
-            <KnowledgeCard Svg={StatisticsLogo} Title='Statistics' Description='Description'/>
-            <KnowledgeCard Svg={MLLogo} Title='Machine Learning' Description='Description'/>
-            <KnowledgeCard Svg={APILogo} Title='API Development' Description='Description'/>
-            <KnowledgeCard Svg={CloudLogo} Title='Cloud Services' Description='Description'/>
+            <KnowledgeCard Svg={ProgrammingLogo} Title='Programming' Description='Web, OOP, Functional, Low-Level'/>
+            <KnowledgeCard Svg={DatabasesLogo} Title='Databases' Description='MySQL, SQL Server, SAP Hana'/>
+            <KnowledgeCard Svg={StatisticsLogo} Title='Statistics' Description='Exploratory Data Analysis, Probabilities'/>
+            <KnowledgeCard Svg={MLLogo} Title='Machine Learning' Description='SKLearn, Keras, TensorFLow'/>
+            <KnowledgeCard Svg={APILogo} Title='API Development' Description='Flask, NodeJS, AWS Lambda'/>
+            <KnowledgeCard Svg={CloudLogo} Title='Cloud Services' Description='AWS, GCP'/>
           </div>
         </section>
         <section>
-          <Header Title="Education" Description="Description"/>
+          <Header Title="Education" Description="I have studied in two great state universities, one of them as part of my abroad studies"/>
         </section>
         <section className='flex flex-col bg-black px-9'>
           <EducationCard Institution='University of New Mexico' Period='January - May | 2023' Title='Computer Science Exchange Student' Description='Have taken courses on Machine Learning, Deep Learning, Computational Structural Biology, Declarative Programming, and Sustainability.'/>
@@ -65,13 +65,13 @@ const Index = () => {
           <EducationCard Institution='University of Antioquia' Period='February 2018 - Present' Title='Systems Engineering Bachelor' Description='Have learned and put into practice different software development life cycles and methodologies from the analysis and definition of the architecture to the implementation using best practices to ensure the quality of a product that meets the user’s needs.'/>
         </section>
         <section>
-          <Header Title='Portafolio' Description='Description'/>
+          <Header Title='Portafolio' Description="In the next projects you'll see proficiency in Python, data wrangling libraries, machine learning techniques and complex challenges"/>
         </section>
         <section className='flex flex-row gap-16 overflow-x-auto scrollbar'>
           <ProjectCard PicPath='images/fakefaces.jpg' Title='Generative AI for Human Faces' Description='Developed a Convolutional Generative Adversarial Network architecture.' Article='https://docs.google.com/document/d/1L7Egg8S4L8jkffS4zfIxR633RpwBXWN9H8RXXl2dTn0/edit' Code=''/>
-          <ProjectCard PicPath='images/regression.png' Title='Customer Attraction Model' Description='Developed regression model to predict how valuable a customer will be.' Article='https://docs.google.com/document/d/15a1fd9Qi5nP1BXmcJd-DCpj3yJaXfBeNzsAGVX3N0WY/edit?usp=sharing' Code='https://colab.research.google.com/drive/1sCcpbnBfeCDt61ddVRTNXkIDEFixA5q-?usp=sharing'/>
+          <ProjectCard PicPath='images/regression.png' Title='Customer Attraction Model' Description='Developed a regression model to predict the value of customers.' Article='https://docs.google.com/document/d/15a1fd9Qi5nP1BXmcJd-DCpj3yJaXfBeNzsAGVX3N0WY/edit?usp=sharing' Code='https://colab.research.google.com/drive/1sCcpbnBfeCDt61ddVRTNXkIDEFixA5q-?usp=sharing'/>
           <ProjectCard PicPath='images/timeseries.png' Title='Fuel Consumption Time Series' Description='Developed a Time Series  model to predict in different periods ahead.' Article='https://docs.google.com/document/d/1WiLP6zCKeN4f2OcCqKHekVg3bPrHdxJ4TuZ4X4H5ZMg/edit?usp=sharing' Code='https://colab.research.google.com/drive/1RcuAmj9psQbtFeWMrcpagW_oEnJIwNqq?usp=sharing'/>
-          <ProjectCard PicPath='images/forecast.png' Title='Forecast Prediction Model' Description='Developed a classification model predicting rain for the next day.' Article='' Code=''/>
+          <ProjectCard PicPath='images/forecast.png' Title='Forecast Prediction Model' Description='Developed a classification model predicting rain for the next day.' Article='' Code='https://colab.research.google.com/drive/1hTUF8tgBEkfxYSmVVGwmIX_vGwxftdsE#scrollTo=o-Mqy8wRMCEj'/>
         </section>
         <footer className='flex bg-black p-4 mx-auto text-xs mt-12'>
           <span className='mx-auto'>
@@ -81,12 +81,12 @@ const Index = () => {
       </main>
       <aside className='bg-black w-[97px] h-screen fixed right-0 flex flex-col items-center gap-4'>
         <span className='h-20 flex items-end font-bold'>Links</span>
-        <LinkLogo Icon={BiLogoFacebook}/>
-        <LinkLogo Icon={AiFillInstagram}/>
-        <LinkLogo Icon={AiOutlineTwitter}/>
-        <LinkLogo Icon={BiLogoLinkedin}/>
-        <LinkLogo Icon={AiFillYoutube}/>
-        <LinkLogo Icon={AiFillGithub}/>
+        <LinkLogo Icon={BiLogoFacebook} Link='https://www.facebook.com/'/>
+        <LinkLogo Icon={AiFillInstagram} Link='https://www.instagram.com/'/>
+        <LinkLogo Icon={AiOutlineTwitter} Link='https://www.twitter.com/'/>
+        <LinkLogo Icon={BiLogoLinkedin} Link='https://www.linkedin.com/in/johan-zuluaga-gomez/'/>
+        <LinkLogo Icon={AiFillYoutube} Link='https://www.youtube.com/'/>
+        <LinkLogo Icon={AiFillGithub} Link='https://github.com/johandzuluaga'/>
       </aside>
     </div>
   );
