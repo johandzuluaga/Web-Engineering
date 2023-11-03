@@ -71,7 +71,7 @@ const Index = () => {
         </section>
         <footer className='flex bg-black p-4 mx-auto text-xs mt-12'>
           <span className='mx-auto'>
-            &copy; All rights reserved. Made in 2023 by Johan Zuluaga.
+            &copy; 2023. All rights reserved. Made by Johan Zuluaga.
           </span>
         </footer>
       </main>
